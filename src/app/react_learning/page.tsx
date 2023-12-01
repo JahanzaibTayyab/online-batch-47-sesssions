@@ -1,5 +1,7 @@
 import MyButton from "@/components/myButton";
 import AboutPage from "@/components/markupWithJSX";
+import DisplayingData from "@/components/Displayingdata";
+import ConditionalRendering from "@/components/ConditionalRendering";
 
 function MyButton2() {
   return (
@@ -30,6 +32,15 @@ const ReactLearning = () => {
           In React, you specify a CSS class with className. It works the same
           way as the HTML class attribute:
         </p>
+      </div>
+      <div>
+        <p className="text-sm font-semibold">Display Data</p>
+        <DisplayingData />
+      </div>
+      <div>
+        <p className="text-sm font-semibold">Conditional Rendering </p>
+
+        <ConditionalRendering />
       </div>
     </div>
   );
