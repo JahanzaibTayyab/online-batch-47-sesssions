@@ -2,6 +2,8 @@ import MyButton from "@/components/myButton";
 import AboutPage from "@/components/markupWithJSX";
 import DisplayingData from "@/components/Displayingdata";
 import ConditionalRendering from "@/components/ConditionalRendering";
+import RenderList from "@/components/RenderList";
+import UpdatingState from "@/components/UpdatingState";
 
 function MyButton2() {
   return (
@@ -41,6 +43,14 @@ const ReactLearning = () => {
         <p className="text-sm font-semibold">Conditional Rendering </p>
 
         <ConditionalRendering />
+      </div>
+      <div>
+        <p className="text-sm font-semibold">Render List</p>
+        <RenderList />
+      </div>
+      <div>
+        <p className="text-sm font-semibold">Update State</p>
+        <UpdatingState count={10} count1={20} count2={30} count3={40} />
       </div>
     </div>
   );

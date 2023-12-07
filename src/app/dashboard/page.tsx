@@ -1,8 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 const Dashboard = () => {
+  const user = { name: "Jahanzaib" };
   return (
     <div className="p-12">
+      {/* For Error File */}
+      {/* <div>{user}</div> */}
       DashBoard Route
       <div>
         <p className="font-bold text-lg">Nested Route</p>
