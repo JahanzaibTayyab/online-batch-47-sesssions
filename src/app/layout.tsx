@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import Image from "next/image";
+import Logo from "@/assets/images/logo47.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav className="bg-slate-500 p-2 px-5 flex gap-5">
-          <Link href={"/"}>Home</Link>
+          <Link href={"/"}>
+            <Image src={Logo} alt="logo" width={50} height={50} />
+          </Link>
           <Link href={"/dashboard"}>Dashboard</Link>
           <Link href={"/blog"}>Blog</Link>
         </nav>

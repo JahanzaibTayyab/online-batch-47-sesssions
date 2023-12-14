@@ -4,6 +4,7 @@ import DisplayingData from "@/components/Displayingdata";
 import ConditionalRendering from "@/components/ConditionalRendering";
 import RenderList from "@/components/RenderList";
 import UpdatingState from "@/components/UpdatingState";
+import Link from "next/link";
 
 function MyButton2() {
   return (
@@ -14,6 +15,7 @@ const ReactLearning = () => {
   return (
     <div className="flex flex-col gap-3 text-xs p-10">
       ReactLearning
+      <Link href={"/react_learning/advanced-learning"}>Advanced Topics</Link>
       <div>
         Create a Component
         <h1 className="font-bold">Welcome to my app</h1>
