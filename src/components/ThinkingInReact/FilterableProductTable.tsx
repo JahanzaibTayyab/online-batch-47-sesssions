@@ -26,16 +26,16 @@ function FilterableProductTable({ products }: any) {
   function ProductTable({ products }: any) {
     const rows: any[] = [];
     let lastCategory: any = null;
-    console.log(
-      "🚀 ~ file: FilterableProductTable.tsx:29 ~ ProductTable ~ lastCategory:",
-      lastCategory
-    );
+    // console.log(
+    //   "🚀 ~ file: FilterableProductTable.tsx:29 ~ ProductTable ~ lastCategory:",
+    //   lastCategory
+    // );
 
     products.forEach((product: any) => {
-      console.log(
-        "🚀 ~ file: FilterableProductTable.tsx:47 ~ products.forEach ~ product:",
-        product
-      );
+      // console.log(
+      //   "🚀 ~ file: FilterableProductTable.tsx:47 ~ products.forEach ~ product:",
+      //   product
+      // );
       if (product.category !== lastCategory) {
         rows.push(
           <ProductCategoryRow

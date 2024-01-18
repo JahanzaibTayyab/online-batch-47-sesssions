@@ -1,6 +1,6 @@
 import Image from "next/image";
 import image1 from "@/assets/images/image1.jpg";
-console.log("🚀 ~ file: Displayingdata.tsx:3 ~ image1:", image1);
+//console.log("🚀 ~ file: Displayingdata.tsx:3 ~ image1:", image1);
 function DisplayingData() {
   const user = {
     name: "Jahanzaib Tayyab",

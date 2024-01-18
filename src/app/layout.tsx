@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import "./globals.css";
+
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import "./globals.css";
-import Image from "next/image";
 import Logo from "@/assets/images/logo47.png";
+import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           </Link>
           <Link href={"/dashboard"}>Dashboard</Link>
           <Link href={"/blog"}>Blog</Link>
+          <Link href={"/group-layout"}>Group Layout</Link>
         </nav>
         {children}
       </body>
